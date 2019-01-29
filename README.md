@@ -1,5 +1,5 @@
-# College Football Recruiting App (Code Samples & Screenshots)
-This is code samples and screenshots from a private college football recruiting demo I worked on. 
+# College Football Recruiting App (~~Code Samples~~ & Screenshots)
+This is ~~code samples~~ *(not yet...)* and screenshots from a private college football recruiting demo I worked on. 
 
 The logo and name has been altered for anonymity. To my knowledge, this app never launched.
 
