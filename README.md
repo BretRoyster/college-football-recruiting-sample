@@ -42,9 +42,9 @@ After some discussion, it seemed like it was time to break into React Native.
 
 From an architecture standpoint, I built the backend for our RN project with using a [JHipster stack](https://www.jhipster.tech/) which is Spring Boot (Java), AngularJS as an admin interface (I opted not to use a React front-end simply because we were new to React and I wanted to keep that learning complexity directed at the user app and not the admin interface).
 
-After establishing the back-end, my co-worker had settled on the majority of the architecture for the React Native app, which consisted of a fairly large (but complete) boilerplate of "screens" and "components" (or smart and dumb components - our 'screens' held state and our 'components' did not).
+After establishing the back-end, my co-worker had settled on the majority of the architecture for the React Native app, which consisted of a fairly large (but complete) boilerplate pattern for "screens" and "components" (or smart and dumb components - our 'screens' held state and our (dumb) 'components' did not).
 
-When I jumped into the React development I used https://reactnativeexpress.com to spin up, which was super helpful - I highly recommend it. And spent a couple hours with my co-worker on the phone to get an understanding of his Redux/Redux Saga 'boilerplate'.
+When I jumped into the React development I used https://reactnativeexpress.com to spin up, which was super helpful - I highly recommend it. And spent a couple hours with my co-worker on the phone to get an understanding of his Redux/Redux Saga 'boilerplate' pattern.
 
 ### State Management (Redux)
 
