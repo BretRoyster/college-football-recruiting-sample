@@ -35,11 +35,15 @@ We had a new client that needed a college recruiting app created in iOS, Android
 
 After some discussion, it seemed like it was time to break into React Native.
 
+### Front-end and Back-end Architecture
+
 From an architecture standpoint, I built the backend for our RN project with using a [JHipster stack](https://www.jhipster.tech/) which is Spring Boot (Java), AngularJS as an admin interface (I opted not to use a React front-end simply because we were new to React and I wanted to keep that learning complexity directed at the user app and not the admin interface).
 
 After establishing the back-end, my co-worker had settled on the majority of the architecture for the React Native app, which consisted of a fairly large (but complete) boilerplate of "screens" and "components" (or smart and dumb components - our 'screens' held state and our 'components' did not).
 
 When I jumped into the React development I used https://reactnativeexpress.com to spin up, which was super helpful - I highly recommend it. And spent a couple hours with my co-worker on the phone to get an understanding of his Redux/Redux Saga 'boilerplate'.
+
+### State Management (Redux)
 
 The state management was 'mostly' [React Redux](https://github.com/reduxjs/react-redux). For forms I opted to use the standard React state logic (and I instructed our team to do the same) - because I personally didn't see the benefit in all of the boilerplate overhead of Redux pattern for the form inputs. It just felt completely overkill and unnecessary. I also felt like it created a nice separation of intent - standard React state was used in very temporarily circumstances and React Redux was indented for everything else.
 
@@ -52,6 +56,8 @@ Redux Persist, could have been marginally worth it (it was supposed to be very s
 Anyway...
 
 We also used [Redux-Saga](https://github.com/redux-saga/redux-saga) for our HTTP connections to the back-end Spring Boot (Java) server I developed. Honestly, after being exposed to alternative HTTP client approaches in React - Redux-Saga could feel possibly boilerplate 'heavy' again, but I would still use it in the future because I think it helps enforce a good clear pattern working with HTTP and React Redux.
+
+### Gotchas! (ie. 3rd Party Integration Woes!)
 
 One of the bigger, gotchas that happened on this project was discovering that (for some reason) [react-navigation](https://github.com/react-navigation/react-navigation) created terrible memory performance issues in Android for apps with larger sets of scenes/pages. So I was also exposed to [React Native Navigation by Wix](https://github.com/wix/react-native-navigation) which I thought was fairly straightforward to work with (despite some of their documentation being lacking).
 
