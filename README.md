@@ -70,7 +70,7 @@ Also leveraged open-source components like [NativeBase](https://nativebase.io/),
 
 ### My Direct Contributions
 
-So again, I did not originally architect our React Native app. But I had my hands all over it fixing bugs and adding features or finishing features so that my devs could move on to scaffolding out more boilerplate and styles for new screens/features (to meet our schedule constraints).
+So again, I did not originally architect our React Native app (but solely built the back-end). And I had my hands all over the front-end apps (mobile and web) fixing bugs and adding features or finishing features to the so that my devs could move on to scaffolding out more boilerplate and styles for new screens/features (to meet our schedule constraints).
 
 For instance, I worked a lot with the Map and Nativebase Card Swiper. Initially I had other develops scaffold our boilerplate for those pages and do the initial integration of the 3rd party components, which was typically the easy part for them. Obviously copy/pasting boilerplate shouldn't have been difficult - but for the other develops besides the original architect it was for some reason - so I often was correctly incorrect boilerplate code to get things working. The 3rd party component we used were typically super easy to just stick into our project, but getting them to do exactly what we wanted them to do was typically a more involved process, which is what I'd ended up doing a lot of.
 
