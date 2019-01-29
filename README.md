@@ -9,13 +9,13 @@ The logo and name has been altered for anonymity. To my knowledge, this app neve
 
 ## Work Summary
 
-Mobile Development: android studio, apple xcode, google maps api, redux, redux-saga, react-native
+*Mobile Development: android studio, apple xcode, google maps api, redux, redux-saga, react-native*
 
 Startup client needed MVP of iOS and Android mobile apps for next round of investor fund-raising efforts.
 
 I lead a team of 2 full-time front-end developers, 1-2 part-time front-end developers throughout the project, and myself as a senior full-stack developer.
 
-I was responsible for developing (1) the advanced front-end mapping features and (2) the entire Java / Spring Boot back-end server, as well as other features, bug fixes, QA improvements, etc.
+I was responsible for developing (1) the advanced front-end mapping features and (2) the entire Java / Spring Boot back-end server, as well as other features, bug fixes, improvements, etc.
 
 Also finished and refined majority of front-end development started by other teammates, which was necessary to shorten our integration/QA cycle to help meet client's cost constraints.
 
@@ -41,23 +41,27 @@ After establishing the back-end, my co-worker had settled on the majority of the
 
 When I jumped into the React development I used https://reactnativeexpress.com to spin up, which was super helpful - I highly recommend it. And spent a couple hours with my co-worker on the phone to get an understanding of his Redux/Redux Saga 'boilerplate'.
 
-The state management was 'mostly' React Redux. For forms I opted to use the standard React state logic (and I instructed our team to do the same) - because I personally didn't see the benefit in all of the boilerplate overhead of Redux pattern for the form inputs. It just felt completely overkill and unnecessary. I also felt like it created a nice separation of intent - standard React state was used in very temporarily circumstances and React Redux was indented for everything else.
+The state management was 'mostly' [React Redux](https://github.com/reduxjs/react-redux). For forms I opted to use the standard React state logic (and I instructed our team to do the same) - because I personally didn't see the benefit in all of the boilerplate overhead of Redux pattern for the form inputs. It just felt completely overkill and unnecessary. I also felt like it created a nice separation of intent - standard React state was used in very temporarily circumstances and React Redux was indented for everything else.
 
-I looked into how easy it was to add Redux Persist to our architecture, but by the time I discovered it I didn't have time to confidently test it in that app and ensure it didn't have some kind of adverse effect that would create more cost for our customer - and it wasn't immediately needed either, even though it was really interesting to me.
+I looked into how easy it was to add [Redux Persist](https://github.com/rt2zz/redux-persist) to our architecture, but by the time I discovered it I didn't have time to confidently test it in that app and ensure it didn't have some kind of adverse effect that would create more cost for our customer - and it wasn't immediately needed either, even though it was really interesting to me.
 
 This is a good time to mention, that this project was a client project and our client was very concerned with speed/cost and we didn't really have time to do things that didn't have an immediate and direct benefit that the client was specifically asking for - most of my projects in my previous roles were like that - even though sometimes I did find time to 'experiment' if I knew the risk was worth it. 
 
-Redux Persist, could have been marginally worth it (it was supposed to be very simple to add) - I was just running into too many unknowns in React Native in general, so at that point I was operating us at the lowest risk I could.
+Redux Persist, could have been marginally worth it (it was supposed to be very simple to add) - I was just running into too many unknowns in React Native in general, so at that point I was operating us at the lowest risk I could. Additionally we were already using the local device storage to cache user credentials via a very simple pattern, and could easily use that for anything else we wanted persisted locally between user sessions - which there was one more minor thing we persisted, I believe, but I can't even recall what it was.
 
-Anyway... We also used Redux-Saga for our HTTP connections to the back-end Spring Boot (Java) server I developed. Honestly, after being exposed to an alternative HTTP client approach in React - Redux-Saga could feel possibly boilerplate 'heavy' again, but I would still use it in the future because I think it helps enforce a good clear pattern working with HTTP and React Redux.
+Anyway...
 
-One of the bigger, gotchas that happened on this project was discovering that (for some reason) react-navigation created terrible memory performance issues in Android for apps with larger sets of scenes/pages. So I was also exposed to React Native Navigation by Wix which I thought was fairly straightforward to work with (despite some of their documentation being lacking) - another challenge of that project was library integration like [React Native Maps](https://github.com/react-native-community/react-native-maps) and working with [Expo](https://Expo.io) (ie. trying to circumvent their constraints while still wanting to leverage their tools - eventually opting to just leave Expo completely because it was it was too much work to attempt to circumvent some of their architecture - and it was also a decision made above my head - I would have liked to see how fast we could have iterated coding cycles back to the client using Expo, personally.)
+We also used [Redux-Saga](https://github.com/redux-saga/redux-saga) for our HTTP connections to the back-end Spring Boot (Java) server I developed. Honestly, after being exposed to alternative HTTP client approaches in React - Redux-Saga could feel possibly boilerplate 'heavy' again, but I would still use it in the future because I think it helps enforce a good clear pattern working with HTTP and React Redux.
 
-Also leveraged open-source components like [NativeBase](https://nativebase.io/), and one other component library that I cant recall right now. I used them for a card swiper and tabs.
+One of the bigger, gotchas that happened on this project was discovering that (for some reason) [react-navigation](https://github.com/react-navigation/react-navigation) created terrible memory performance issues in Android for apps with larger sets of scenes/pages. So I was also exposed to [React Native Navigation by Wix](https://github.com/wix/react-native-navigation) which I thought was fairly straightforward to work with (despite some of their documentation being lacking).
 
-So again, I did not originally architect our React Native app. But I had my hands all over it fixing bugs and adding features or finishing features so that my devs could move on to scaffolding out more boilerplate for new screens/features (to meet our schedule constraints).
+Another challenge of that project was library integration like [React Native Maps](https://github.com/react-native-community/react-native-maps) and working with [Expo](https://Expo.io) (ie. trying to circumvent their constraints while still wanting to leverage their tools - eventually opting to just leave Expo completely because it was it was too much work to attempt to circumvent some of their architecture - and it was also a decision made mostly above my head - I would have liked to see how fast we could have iterated coding cycles back to the client using Expo, personally.)
 
-For instance, I worked a lot with the Map and Nativebase Card Swiper. Initially I had other develops scaffold our boilerplate for those pages and do the initial integration and styling of the 3rd party components, which was typically the easy part for them. Obviously copy/pasting boilerplate shouldn't have been difficult - but for everyone but the original dev it was for some reason - so I often was correctly incorrect boilerplate code to get things working. The 3rd party component we used were typically super easy to just stick into our project, but getting them to do exactly what we wanted them to do was typically a more involved process, which is what I'd ended up doing most of.
+Also leveraged open-source components like [NativeBase](https://nativebase.io/), and one other component library that I can't recall right now. We used them for a card swiper and tabs at least, possibly some other components.
+
+So again, I did not originally architect our React Native app. But I had my hands all over it fixing bugs and adding features or finishing features so that my devs could move on to scaffolding out more boilerplate and styles for new screens/features (to meet our schedule constraints).
+
+For instance, I worked a lot with the Map and Nativebase Card Swiper. Initially I had other develops scaffold our boilerplate for those pages and do the initial integration of the 3rd party components, which was typically the easy part for them. Obviously copy/pasting boilerplate shouldn't have been difficult - but for the other develops besides the original architect it was for some reason - so I often was correctly incorrect boilerplate code to get things working. The 3rd party component we used were typically super easy to just stick into our project, but getting them to do exactly what we wanted them to do was typically a more involved process, which is what I'd ended up doing a lot of.
 
 So I hope I'm indicating that I was exposed to work across the entire app because that was really the case. The only area I would say I'm least confident in currently is in styling. Honestly I'm also not the best at CSS either. Typically I like to take an existing design (including styles) and port them over of new features etc. Its just not my strong suit. I helped my other developers find a process for translating PSDs from Photoshop to React Native styling for components, but I never personally touched that. I did end up modifying styles to help things look better or again, port over styles for new scenes/pages but I did not initially build and styles for scratch.
 
