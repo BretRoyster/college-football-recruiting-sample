@@ -18,15 +18,15 @@ Startup client needed MVP of iOS and Android mobile apps for next round of inves
 
 I lead a team of 2 full-time front-end developers, 1-2 part-time front-end developers throughout the project, and myself as a senior full-stack developer.
 
-I was responsible for developing (1) the advanced front-end mapping features and (2) the entire Java / Spring Boot back-end server, as well as other features, bug fixes, improvements, etc.
+- I was responsible for developing (1) the advanced front-end mapping features and (2) the entire Java / Spring Boot back-end server, as well as other features, bug fixes, improvements, etc.
 
-Also finished and refined majority of front-end development started by other teammates, which was necessary to shorten our integration/QA cycle to help meet client's cost constraints.
+- Also finished and refined majority of front-end development started by other teammates, which was necessary to shorten our integration/QA cycle to help meet client's cost constraints.
 
-Solely responsible for production-ready testing, debugging and fixing features prior to build releases. 
+- Solely responsible for production-ready testing, debugging and fixing features prior to build releases. 
 
-Created and maintained scripts for build and dev environments. 
+- Created and maintained scripts for build and dev environments. 
 
-Solely responsible for weekly builds in xCode and Android Studio, and deploys to iTunesConnect (Apple App Store and Test Flight) and Play Store respectively.
+- Solely responsible for weekly builds in xCode and Android Studio, and deploys to iTunesConnect (Apple App Store and Test Flight) and Play Store respectively.
 
 Client was very happy with overall outcome, and received an overwhelmingly positive response from their current investors.
 
