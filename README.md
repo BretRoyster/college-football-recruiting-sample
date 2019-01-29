@@ -65,13 +65,19 @@ Another challenge of that project was library integration like [React Native Map
 
 Also leveraged open-source components like [NativeBase](https://nativebase.io/), and one other component library that I can't recall right now. We used them for a card swiper and tabs at least, possibly some other components.
 
+### My Direct Contributions
+
 So again, I did not originally architect our React Native app. But I had my hands all over it fixing bugs and adding features or finishing features so that my devs could move on to scaffolding out more boilerplate and styles for new screens/features (to meet our schedule constraints).
 
 For instance, I worked a lot with the Map and Nativebase Card Swiper. Initially I had other develops scaffold our boilerplate for those pages and do the initial integration of the 3rd party components, which was typically the easy part for them. Obviously copy/pasting boilerplate shouldn't have been difficult - but for the other develops besides the original architect it was for some reason - so I often was correctly incorrect boilerplate code to get things working. The 3rd party component we used were typically super easy to just stick into our project, but getting them to do exactly what we wanted them to do was typically a more involved process, which is what I'd ended up doing a lot of.
 
 Again I worked across the entire app and back-end. The only area I would say I'm least confident in currently is in styling. Honestly I'm also not the best at CSS either. Typically I like to take an existing design (including styles) and port them over for new features etc. Its just not my strong suit. I helped my other developers find a process for translating PSDs from Photoshop to React Native styling for components, but I never personally touched that. I did end up modifying styles to help things look better or again, port over styles for new scenes/pages but I did not initially build our styles from scratch.
 
+#### React Native Maps Features
+
 So for the map, after the initial bootstrap of that scene - some of the problems we ran into that I resolved was (1) the actual native library had bugs in iOS and worked differently in Android vs iOS - so I opted to switch the iOS configuration to use Google maps so that both apps had a unified map across Android and iOS. Then (2) there was also another issue in iOS where specifically on Google maps the map pins would render in a way where the library acted like you were moving a set of pins to a new set of locations every time the screen refreshed, but actually we were just redrawing the exact same state of pin positions - which was a known library bug with Google Maps and iOS at the time. I opted to build a workaround where I controlled when we allowed the pins to be redrawn separately from the rest of the scene/page. Fixing the actual library on the Native side would have been ideal, but I didn't have time to go that indepth into the problem for this project.
+
+#### NativeBase Card Swiper Features
 
 For the card swiper, the issue that my dev had was that the card swiper was built to really only have 2 choices yes/no, but we needed a third choice of "maybe". The idea was that a recruiter would be looking at a set of athletes from a school and either be interested in following them, never want to see them again, or defer that decision. Also the backend needed to be updated to handle 'bookmarking' the 'yes', 'maybe' and 'no' responses to impact future searches.
 
@@ -79,9 +85,13 @@ The client also wanted the card swiper to move to the next set of athletes of th
 
 So my dev built the boilerplate (which in this case was mostly just a component screen with a Nativebase 3rd party component) and loaded an initial set of athletes to start discovering those issues - and then I took over enhanced it found more bugs and eventually got it full feature complete.
 
+#### Components Built from Scratch (ie. On Top of FlatLists)
+
 The components I built the most from scratch were (1) the scene where you could see/manage all the athletes you bookmarked, and (2) the saved search feature. 
 
 Both pages were variations of mostly a flatlist. The manage page with the athlete's information and a couple buttons to navigate to their details screen or remove them from the list, and the saved search which listed search configurations the user saved from the map. I mention flatlist because that was another performance issue we discovered, which is obvious when reading the docs - that you want to use flatlists for lists longer sets of data because the rendering of the elements are more optimized.
+
+#### React Native => Web App Port (ReactXP)
 
 Lastly we ported the entire app to ReactJS using a microsoft library called [ReactXP](https://microsoft.github.io/reactxp/). The gotcha here was that we had to (1) refactor the entire app to use ReactXP components which replaced standard React Native components, and the second gotcha (2) was probably finding the right webpack configuration among varying documentation. 
 
