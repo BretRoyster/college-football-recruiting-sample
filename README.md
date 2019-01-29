@@ -1,6 +1,7 @@
 # college-recruiting-demo-screenshots
 This is screenshots from a private college football recruiting demo I worked on. The logo and name has been altered for anonymity. To my knowledge this app officially never launched.
 
+Work Summary
 ---
 
 Mobile Development: android studio, apple xcode, google maps api, redux, redux-saga, react-native
@@ -21,4 +22,4 @@ Solely responsible for weekly builds in xCode and Android Studio, and deploys to
 
 Client was very happy with overall outcome, and received an overwhelmingly positive response from their current investors.
 
-NOTE: Client company logo and name have been replaced in screen shots to maintain privacy. 
+**NOTE:** Client company logo and name have been replaced in screen shots to maintain privacy. 
