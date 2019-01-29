@@ -3,8 +3,8 @@ This is code samples and screenshots from a private college football recruiting 
 
 The logo and name has been altered for anonymity. To my knowledge, this app never launched.
 
-- [Work Summary](https://github.com/BretRoyster/college-football-recruiting-sample/blob/master/README.md#screenshots)
-- [My React / React Native Experience on this Project](https://github.com/BretRoyster/college-football-recruiting-sample/blob/master/README.md#screenshots)
+- [Work Summary](https://github.com/BretRoyster/college-football-recruiting-sample/blob/master/README.md#work-summary)
+- [My React / React Native Experience on this Project](https://github.com/BretRoyster/college-football-recruiting-sample/blob/master/README.md#my-react--react-native-experience-on-this-project-brain-dump)
 - [Screenshots](https://github.com/BretRoyster/college-football-recruiting-sample/blob/master/README.md#screenshots)
 
 ## Work Summary
