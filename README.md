@@ -106,3 +106,30 @@ After I got it running on web, I went through and applied the same refactoring l
 
 ### Registration Page (Android)
 ![](https://bretroyster.siterubix.com/wp-content/uploads/2019/01/2018-09-26_1405.png?raw=true)
+
+### Athlete Details Page
+![](https://bretroyster.siterubix.com/wp-content/uploads/2019/01/2018-09-26_1409.png?raw=true)
+
+### Map View Page
+![](https://bretroyster.siterubix.com/wp-content/uploads/2019/01/2018-09-26_1409_001.png?raw=true)
+
+### Map View UI options
+![](https://bretroyster.siterubix.com/wp-content/uploads/2019/01/2018-09-26_1410.png?raw=true)
+
+### Search Dialog
+![](https://bretroyster.siterubix.com/wp-content/uploads/2019/01/2018-09-26_1410_001.png?raw=true)
+
+### Evaluate Athlete Page (NativeBase Card Swiper)
+![](https://bretroyster.siterubix.com/wp-content/uploads/2019/01/2018-09-26_1411.png?raw=true)
+
+### Map Filter Page
+![](https://bretroyster.siterubix.com/wp-content/uploads/2019/01/2018-09-26_1411_001.png?raw=true)
+
+### Saved Search Page
+![](https://bretroyster.siterubix.com/wp-content/uploads/2019/01/2018-09-26_1412.png?raw=true)
+
+### Athlete Board Page (Android)
+![](https://bretroyster.siterubix.com/wp-content/uploads/2019/01/2018-09-26_1408.png?raw=true)
+
+### Login page
+![](https://bretroyster.siterubix.com/wp-content/uploads/2019/01/2018-09-26_1404.png?raw=true)
