@@ -40,11 +40,13 @@ After some discussion, it seemed like it was time to break into React Native.
 
 ### Front-end and Back-end Architecture
 
-From an architecture standpoint, I built the backend for our RN project with using a [JHipster stack](https://www.jhipster.tech/) which is Spring Boot (Java), AngularJS as an admin interface (I opted not to use a React front-end simply because we were new to React and I wanted to keep that learning complexity directed at the user app and not the admin interface).
+From an architecture standpoint, I built the backend for our RN project with using a [JHipster stack](https://www.jhipster.tech/) which is Spring Boot (Java), AngularJS as an admin interface (I opted not to use a React front-end simply because we were new to React and I wanted to keep that learning complexity directed at the user app and not the less critical admin interface).
 
-After establishing the back-end, my co-worker had settled on the majority of the architecture for the React Native app, which consisted of a fairly large (but complete) boilerplate pattern for "screens" and "components" (or smart and dumb components - our 'screens' held state and our (dumb) 'components' did not).
+After establishing the back-end, I setup the native shell with Expo (and eventually in XCode and Android Studio with 3rd party library integrations) and my co-worker had settled on the majority of the architecture for the React Native app, which consisted of a fairly large (but complete) boilerplate pattern for (1) "screens" and "components" (or smart and dumb components - our 'screens' held state and our (dumb) 'components' did not), (2) the Redux state management with Redux Saga for HTTP, and initally (3) React Nativation for our routing.
 
 When I jumped into the React development I used https://reactnativeexpress.com to spin up, which was super helpful - I highly recommend it. And spent a couple hours with my co-worker on the phone to get an understanding of his Redux/Redux Saga 'boilerplate' pattern.
+
+We opted to use [TypeScript](https://www.typescriptlang.org/) instead of pure Javascript. The thought process was that it would improve the development experience, particularly with more robust "compilation error messages" as a layer above React Native (which we were new to). We felt like React Native did not have very informative error messaging for the kinds of issues our team was having learning the system. TypeScript seemed to help, but did add some minor complexity to the build process and some bugs that were harder spot because they compiled successfully in TypeScript (ie. It was easy to start associating the 'correctness' of our code to successful compilation of TypeScript when that wasn't really always the case; it could be seen as a crutch for a very small set of the bugs we had).
 
 ### State Management (Redux)
 
@@ -62,7 +64,7 @@ We also used [Redux-Saga](https://github.com/redux-saga/redux-saga) for our HTTP
 
 ### Gotchas! (ie. 3rd Party Integration Woes!)
 
-One of the bigger, gotchas that happened on this project was discovering that (for some reason) [react-navigation](https://github.com/react-navigation/react-navigation) created terrible memory performance issues in Android for apps with larger sets of scenes/pages. So I was also exposed to [React Native Navigation by Wix](https://github.com/wix/react-native-navigation) which I thought was fairly straightforward to work with (despite some of their documentation being lacking).
+One of the bigger, gotchas that happened on this project was discovering that (for some reason) React Navigation ([react-navigation](https://github.com/react-navigation/react-navigation)) created terrible memory performance issues in Android for apps with larger sets of scenes/pages. So I was also exposed to [React Native Navigation by Wix](https://github.com/wix/react-native-navigation) which I thought was fairly straightforward to work with (despite some of their documentation being lacking).
 
 Another challenge of that project was library integration like [React Native Maps](https://github.com/react-native-community/react-native-maps) and working with [Expo](https://Expo.io) (ie. trying to circumvent their constraints while still wanting to leverage their tools - eventually opting to just leave Expo completely because it was it was too much work to attempt to circumvent some of their architecture - and it was also a decision made mostly above my head - I would have liked to see how fast we could have iterated coding cycles back to the client using Expo, personally.)
 
