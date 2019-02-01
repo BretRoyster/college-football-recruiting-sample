@@ -7,7 +7,7 @@ The logo and name has been altered for anonymity. To my knowledge, this app neve
 - [My React / React Native Experience on this Project](https://github.com/BretRoyster/college-football-recruiting-sample/blob/master/README.md#my-react--react-native-experience-on-this-project-brain-dump)
 - [Screenshots](https://github.com/BretRoyster/college-football-recruiting-sample/blob/master/README.md#screenshots)
 
-This is my most recent experience with React; a cross-platform mobile app (iOS and Android) and web app using React Native framework and ReactXP library respectively, which are both built on ReactJS framework. We also used React Redux, Redux Saga, and React Native Maps libraries for our app. Initially we started the app with the Expo.io tool set, but ultimately opted to eject the app to a 'pure' React Native project.
+This is my most recent experience with React; a cross-platform mobile app (iOS and Android) and web app using React Native framework and ReactXP library respectively, which are both built on ReactJS framework. We also used React Redux, Redux Saga, and React Native Maps libraries for our app. Initially we started the app with the [Expo.io](https://expo.io/) tool set, but ultimately opted to eject the app to a 'pure' React Native project.
 
 
 ## Work Summary
